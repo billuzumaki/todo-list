@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <form class="form-container">
+        <label for="valor-inicial">Valor Inicial:</label>
+        <input type="number" id="valor-inicial" name="valor-inicial">
+      
+        <label for="taxa-juros">Taxa de Juros Anual (%):</label>
+        <input type="number" id="taxa-juros" name="taxa-juros">
+      
+        <label for="tempo">Tempo de Investimento (anos):</label>
+        <input type="number" id="tempo" name="tempo">
+      
+        <label for="deposito-mensal">Depósito Mensal:</label>
+        <input type="number" id="deposito-mensal" name="deposito-mensal">
+      
+        <button type="button" onclick="calcularMontante()">Calcular</button>
+
+        <div>Montante Final: <span id="montante-final"></span></div>
+        
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
