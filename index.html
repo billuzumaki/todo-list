@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Document</title>
     
 </head>
 <body>
-    
-    <form class="form-container">
-        <label for="valor-inicial">Valor Inicial:</label>
-        <input type="number" id="valor-inicial" name="valor-inicial">
-      
-        <label for="taxa-juros">Taxa de Juros Anual (%):</label>
-        <input type="number" id="taxa-juros" name="taxa-juros">
-      
-        <label for="tempo">Tempo de Investimento (anos):</label>
-        <input type="number" id="tempo" name="tempo">
-      
-        <label for="deposito-mensal">Depósito Mensal:</label>
-        <input type="number" id="deposito-mensal" name="deposito-mensal">
-      
-        <button type="button" onclick="calcularMontante()">Calcular</button>
-
-        <div>Montante Final: <span id="montante-final"></span></div>
+    <div class="container">
+        <header>
+            <h1>harvested boxes</h1>
+            <img src="laranjas-em-caixa.png" alt="">
+        </header>
         
-    </form>
+        <label for="">value</label>
+        <input type="text" class="box" id="inputBox" placeholder="put the number of box">
+    
+        <ul id="Todolist">
+        </ul>
+        <label id="result"></label>
+    
+        <div id="bts">
+            <button id="bt" onclick="add()">Add</button>
+            <button onclick="sum()" id="bt">Sum</button>
+            <button onclick="remove()" id="bt">Remove</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
